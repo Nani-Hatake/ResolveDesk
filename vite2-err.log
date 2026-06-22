@@ -1,0 +1,19 @@
+[2m1:51:20 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./components/TicketDetail" from "src/App.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/ResolveDesk/Frontend/src/App.jsx[39m:3:25
+[33m  18 |  import { useState } from "react";
+  19 |  import TicketList from "./components/TicketList";
+  20 |  import TicketDetail from "./components/TicketDetail";
+     |                            ^
+  21 |  import CreateTicket from "./components/CreateTicket";
+  22 |  import "./index.css";[39m
+      at TransformPluginContext._formatLog (file:///c:/ResolveDesk/Frontend/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:42658:41)
+      at TransformPluginContext.error (file:///c:/ResolveDesk/Frontend/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:42655:16)
+      at normalizeUrl (file:///c:/ResolveDesk/Frontend/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:40634:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async file:///c:/ResolveDesk/Frontend/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:40753:37
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///c:/ResolveDesk/Frontend/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:40680:7)
+      at async EnvironmentPluginContainer.transform (file:///c:/ResolveDesk/Frontend/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:42453:18)
+      at async loadAndTransform (file:///c:/ResolveDesk/Frontend/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:35845:27)
+      at async viteTransformMiddleware (file:///c:/ResolveDesk/Frontend/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:37369:24)
