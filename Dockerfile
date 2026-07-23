@@ -5,11 +5,12 @@ EXPOSE 8080
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY . .
-RUN dotnet restore "ResolveDesk.csproj"
-RUN dotnet build "ResolveDesk.csproj" -c Release -o /app/build
 
-FROM build AS publish
-RUN dotnet publish "ResolveDesk.csproj" -c Release -o /app/publish
+# Move directly into the ResolveDesk folder where your code lives
+WORKDIR /src/ResolveDesk
+
+RUN dotnet restore
+RUN dotnet publish -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
